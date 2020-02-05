@@ -1,9 +1,6 @@
-require 'pry'
-
 class Artist
   attr_accessor :name, :artist
   @@all = []
-  # @@all.name.uniq
   def initialize(name)
     @name = name
     @@all << self
@@ -30,7 +27,7 @@ class Artist
         else
           name = Artist.new(name)
         end
-  end
+      end
 
   def print_songs
     @songs.each {|i| puts i.name}
